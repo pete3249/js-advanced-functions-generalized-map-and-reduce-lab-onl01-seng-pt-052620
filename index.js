@@ -11,7 +11,7 @@ function reduce(src, cb, startingPoint) {
     let r = (!!startingPoint) ? startingPoint : src[0]
     let i = (!!startingPoint) ? 0: 1
     
-    for (; i < src.length; i++) {
+    for (i ; i < src.length; i++) {
         r = cb(src[i], r)
     }
     return r
